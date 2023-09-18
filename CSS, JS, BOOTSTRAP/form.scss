@@ -6,6 +6,84 @@
     --yellow: rgb(255, 255, 0);
 }
 
+*{
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 body{
+    margin: 0;
     background: var(--black);
+    #header{
+        width: 100%;
+        height: 30vh;
+        background: var(--yellow);
+    }
+    #navbar{
+        width: 100%;
+        height: 10vh;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: row;
+        flex-basis: auto;
+        font-family: 'IBM Plex Mono', monospace;
+        border-bottom: 0.01rem solid var(--white);
+        div, a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            &:active, :hover, :visited{
+                text-decoration: none;
+            }
+        }
+        #navlogo{   
+            width: 10%;
+            img{
+                width: 100%;
+                filter: invert(1);
+            }
+        }
+        #navplaceholder{
+            width: 45%;
+        }
+        #navhome{
+            width: 15%;
+            border-top: 0;
+            border-bottom: 0.1rem solid transparent;
+            border-right: 0.1rem solid var(--white);
+            &:hover{
+                border-bottom: 0.15rem solid var(--white);
+                transition: all 0.1s;
+            }
+        }
+        #navlyrics{
+            width: 15%;
+            border-top: 0;
+            border-bottom: 0.1rem solid transparent;
+            border-right: 0.1rem solid var(--white);
+            &:hover{
+                border-bottom: 0.15rem solid var(--white);
+                transition: all 0.1s;
+            }
+        }
+        #navform{
+            width: 15%;
+            border-top: 0;
+            border-bottom: 0.1rem solid transparent;
+            border-right: 0.1rem solid var(--white);
+            &:hover{
+                border-bottom: 0.15rem solid var(--white);
+                transition: all 0.1s;
+            }
+        }
+    }
 }
