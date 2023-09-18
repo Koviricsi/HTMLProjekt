@@ -25,11 +25,42 @@ body #header {
   width: 100%;
   height: 50vh;
   background: url(../src/img/aviccihead.png) no-repeat center;
-  background-size: 50%;
+  background-size: contain;
   background-position: 50% 0%;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   filter: grayscale(1);
 }
-body #navbar {
+body #header #headimg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body #header img {
+  width: 50%;
+  margin-left: 5vw;
+  filter: invert(1);
+}
+body #header #headtext {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+}
+body #header #headtext h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+body #header #headtext h3 i {
+  font-size: 90%;
+}
+
+#navbar {
   width: 100%;
   height: 10vh;
   transition: all 0.2s;
@@ -40,7 +71,7 @@ body #navbar {
   border-bottom: 0.01rem solid var(--white);
   border-top: 0.01rem solid var(--white);
 }
-body #navbar div, body #navbar a {
+#navbar div, #navbar a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,57 +80,60 @@ body #navbar div, body #navbar a {
   font-weight: bold;
   text-decoration: none;
 }
-body #navbar div:active, body #navbar div :hover, body #navbar div :visited, body #navbar a:active, body #navbar a :hover, body #navbar a :visited {
+#navbar div:active, #navbar div :hover, #navbar div :visited, #navbar a:active, #navbar a :hover, #navbar a :visited {
   text-decoration: none;
 }
-body #navbar #navlogo {
+#navbar #navlogo {
   width: 10%;
 }
-body #navbar #navlogo img {
+#navbar #navlogo img {
   width: 70%;
   filter: invert(1);
 }
-body #navbar #navplaceholder {
+#navbar #navplaceholder {
   width: 30%;
 }
-body #navbar #navhome {
+#navbar #navhome {
   width: 20%;
   border-top: 0;
   border-bottom: 0.1rem solid transparent;
   border-right: 0.1rem solid var(--white);
   transition: all 0.2s;
 }
-body #navbar #navhome:hover {
-  border-bottom: 0.15rem solid var(--white);
+#navbar #navhome:hover {
+  border-bottom: 0.15rem solid var(--yellow);
   transition: all 0.2s;
-  box-shadow: inset 0 -20px 20px -20px var(--white);
+  box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
   font-size: 1.1rem;
+  color: var(--yellow);
 }
-body #navbar #navlyrics {
+#navbar #navlyrics {
   width: 20%;
   border-top: 0;
   border-bottom: 0.1rem solid transparent;
   border-right: 0.1rem solid var(--white);
   transition: all 0.2s;
 }
-body #navbar #navlyrics:hover {
-  border-bottom: 0.15rem solid var(--white);
+#navbar #navlyrics:hover {
+  border-bottom: 0.15rem solid var(--yellow);
   transition: all 0.2s;
-  box-shadow: inset 0 -20px 20px -20px var(--white);
+  box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
   font-size: 1.1rem;
+  color: var(--yellow);
 }
-body #navbar #navform {
+#navbar #navform {
   width: 20%;
   border-top: 0;
   border-bottom: 0.1rem solid transparent;
   transition: all 0.2s;
 }
-body #navbar #navform:hover {
-  border-bottom: 0.15rem solid var(--white);
+#navbar #navform:hover {
+  border-bottom: 0.15rem solid var(--yellow);
   transition: all 0.2s;
-  box-shadow: inset 0 -20px 20px -20px var(--white);
+  box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
   font-size: 1.1rem;
+  color: var(--yellow);
 }/*# sourceMappingURL=form.css.map */
