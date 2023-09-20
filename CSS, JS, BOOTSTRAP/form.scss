@@ -38,6 +38,7 @@ z-index: 1;
         background-size: contain;
         background-position: 50% 0%;
         filter: grayscale(1);
+        z-index: -1;
     }
 
     #headimg{
@@ -56,12 +57,12 @@ z-index: 1;
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
+        margin-right: 8vw;
         color: var(--yellow);
         h3{
-            font-size: 2rem;
+            font-size: 3vw;
             letter-spacing: 2px;
             text-align: center;
             i{
@@ -69,6 +70,7 @@ z-index: 1;
             }
         }
         }
+
     }
 }
 
@@ -79,8 +81,8 @@ z-index: 1;
     height: 10vh;
     transition: all 0.2s;
     display: flex;
-    flex-direction: row;
-    flex-basis: auto;
+    position: sticky;
+    top: 0;
     font-family: 'IBM Plex Mono', monospace;
     border-bottom: 0.01rem solid var(--white);
     border-top: 0.01rem solid var(--white);
@@ -90,7 +92,7 @@ z-index: 1;
         justify-content: center;
         align-items: center;
         color: var(--white);
-        font-size: 1rem;
+        font-size: 1.5vw;
         font-weight: bold;
         text-decoration: none;
         &:active, :hover, :visited{
@@ -121,7 +123,7 @@ z-index: 1;
             transition: all 0.2s;
             box-shadow: inset 0 -15px 15px -15px var(--yellow);
             letter-spacing: 1px;
-            font-size: 1.1rem;
+            font-size: 2vw;
             color: var(--yellow);
         }
     }
@@ -137,7 +139,7 @@ z-index: 1;
             transition: all 0.2s;
             box-shadow: inset 0 -15px 15px -15px var(--yellow);
             letter-spacing: 1px;
-            font-size: 1.1rem;
+            font-size: 2vw;
             color: var(--yellow);
         }
     }
@@ -152,7 +154,7 @@ z-index: 1;
             transition: all 0.2s;
             box-shadow: inset 0 -15px 15px -15px var(--yellow);
             letter-spacing: 1px;
-            font-size: 1.1rem;
+            font-size: 2vw;
             color: var(--yellow);
         }
     }

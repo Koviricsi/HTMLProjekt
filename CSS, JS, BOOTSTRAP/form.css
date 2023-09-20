@@ -36,6 +36,7 @@ body #header::before {
   background-size: contain;
   background-position: 50% 0%;
   filter: grayscale(1);
+  z-index: -1;
 }
 body #header #headimg {
   width: 100%;
@@ -52,13 +53,13 @@ body #header #headtext {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  margin-right: 8vw;
   color: var(--yellow);
 }
 body #header #headtext h3 {
-  font-size: 2rem;
+  font-size: 3vw;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -71,8 +72,8 @@ body #header #headtext h3 i {
   height: 10vh;
   transition: all 0.2s;
   display: flex;
-  flex-direction: row;
-  flex-basis: auto;
+  position: sticky;
+  top: 0;
   font-family: "IBM Plex Mono", monospace;
   border-bottom: 0.01rem solid var(--white);
   border-top: 0.01rem solid var(--white);
@@ -82,7 +83,7 @@ body #header #headtext h3 i {
   justify-content: center;
   align-items: center;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.5vw;
   font-weight: bold;
   text-decoration: none;
 }
@@ -111,7 +112,7 @@ body #header #headtext h3 i {
   transition: all 0.2s;
   box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 2vw;
   color: var(--yellow);
 }
 #navbar #navlyrics {
@@ -126,7 +127,7 @@ body #header #headtext h3 i {
   transition: all 0.2s;
   box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 2vw;
   color: var(--yellow);
 }
 #navbar #navform {
@@ -140,6 +141,6 @@ body #header #headtext h3 i {
   transition: all 0.2s;
   box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 2vw;
   color: var(--yellow);
 }/*# sourceMappingURL=form.css.map */
