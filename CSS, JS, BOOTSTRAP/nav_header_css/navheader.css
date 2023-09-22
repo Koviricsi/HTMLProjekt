@@ -76,7 +76,6 @@ body #header #headtext h3 i {
   position: sticky;
   top: 0;
   font-family: "IBM Plex Mono", monospace;
-  border-bottom: 0.01rem solid var(--white);
   border-top: 0.01rem solid var(--white);
 }
 #navbar div, #navbar a {
@@ -94,6 +93,7 @@ body #header #headtext h3 i {
 #navbar #navlogo {
   width: 10%;
   padding: 3px;
+  border-bottom: 0.01rem solid var(--white);
 }
 #navbar #navlogo img {
   height: 100%;
@@ -102,12 +102,13 @@ body #header #headtext h3 i {
 }
 #navbar #navplaceholder {
   width: 30%;
+  border-bottom: 0.01rem solid var(--white);
 }
 #navbar #navhome {
   width: 20%;
   border-top: 0;
-  border-bottom: 0.1rem solid transparent;
   border-right: 0.1rem solid var(--white);
+  border-bottom: 0.01rem solid var(--white);
   transition: all 0.2s;
 }
 #navbar #navhome:hover {
@@ -121,7 +122,7 @@ body #header #headtext h3 i {
 #navbar #navlyrics {
   width: 20%;
   border-top: 0;
-  border-bottom: 0.1rem solid transparent;
+  border-bottom: 0.01rem solid var(--white);
   border-right: 0.1rem solid var(--white);
   transition: all 0.2s;
 }
@@ -136,7 +137,7 @@ body #header #headtext h3 i {
 #navbar #navform {
   width: 20%;
   border-top: 0;
-  border-bottom: 0.1rem solid transparent;
+  border-bottom: 0.01rem solid var(--white);
   transition: all 0.2s;
 }
 #navbar #navform:hover {
@@ -192,6 +193,7 @@ body #header #headtext h3 i {
   }
   body #navbar #navlogo {
     width: 100%;
+    border-bottom: none;
   }
   body #navbar #navlogo img {
     width: 20%;
@@ -218,7 +220,7 @@ body #header #headtext h3 i {
     box-shadow: none;
   }
   body #navbar #navform {
-    border: solid transparent;
+    border-bottom: 0.01rem solid var(--white);
     width: 100%;
     font-size: 3vw;
   }
