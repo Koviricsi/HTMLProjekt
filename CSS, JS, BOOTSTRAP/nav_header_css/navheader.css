@@ -156,7 +156,7 @@ body #header #headtext h3 i {
   body #header::before {
     content: "";
     height: 40vh;
-    background: url(../src/img/aviccihead.png) no-repeat center;
+    background: url(../../src/img/aviccihead.png) no-repeat center;
     background-size: contain;
     background-position: bottom;
     filter: grayscale(1);
@@ -178,11 +178,10 @@ body #header #headtext h3 i {
     flex-direction: column;
   }
   body #header #headtext h3 {
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 70%;
+    height: auto;
+    width: 60vw;
     background-color: var(--black);
-    font-size: 2.3vh;
+    font-size: 3vw;
     padding: 1%;
     border: var(--white) solid 0.2rem;
   }

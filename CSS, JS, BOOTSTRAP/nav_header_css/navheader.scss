@@ -171,7 +171,7 @@ z-index: 1;
             &::before{
                 content: "";
                 height: 40vh;
-                background: url(../src/img/aviccihead.png) no-repeat center;
+                background: url(../../src/img/aviccihead.png) no-repeat center;
                 background-size: contain;
                 background-position: bottom;
                 filter: grayscale(1);
@@ -194,10 +194,10 @@ z-index: 1;
                 justify-content: end;
                 flex-direction: column;
                 h3{
-                    height: fit-content;
-                    width: 70%;
+                    height: auto;
+                    width: 60vw;
                     background-color: var(--black);
-                    font-size: 2.3vh;
+                    font-size: 3vw;
                     padding: 1%;
                     border: var(--white) solid 0.2rem;
                 }
