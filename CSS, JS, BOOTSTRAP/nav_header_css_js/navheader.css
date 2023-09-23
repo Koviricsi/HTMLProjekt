@@ -122,6 +122,9 @@ body #navbar .navlink:hover, body #navbar .active:hover {
   letter-spacing: 1px;
   color: var(--yellow);
 }
+body #navbar .current {
+  color: var(--yellow);
+}
 
 @media screen and (max-width: 768px) {
   body #header {
