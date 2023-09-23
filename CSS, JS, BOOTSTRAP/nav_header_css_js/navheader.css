@@ -68,8 +68,7 @@ body #header #headtext h3 {
 body #header #headtext h3 i {
   font-size: 90%;
 }
-
-#navbar {
+body #navbar {
   width: 100%;
   height: 10vh;
   transition: all 0.2s;
@@ -79,7 +78,7 @@ body #header #headtext h3 i {
   font-family: "IBM Plex Mono", monospace;
   border-top: 0.01rem solid var(--white);
 }
-#navbar div, #navbar a {
+body #navbar div, body #navbar a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,34 +87,34 @@ body #header #headtext h3 i {
   font-weight: bold;
   text-decoration: none;
 }
-#navbar div:active, #navbar div :hover, #navbar div :visited, #navbar a:active, #navbar a :hover, #navbar a :visited {
+body #navbar div:active, body #navbar div :hover, body #navbar div :visited, body #navbar a:active, body #navbar a :hover, body #navbar a :visited {
   text-decoration: none;
 }
-#navbar #navlogo {
+body #navbar #navlogo {
   width: 10%;
   padding: 3px;
   border-bottom: 0.01rem solid var(--white);
 }
-#navbar #navlogo img {
+body #navbar #navlogo img {
   height: 100%;
   width: auto;
   filter: invert(1);
 }
-#navbar #navplaceholder {
+body #navbar #navplaceholder {
   width: 30%;
   border-bottom: 0.01rem solid var(--white);
 }
-#navbar .navlink {
+body #navbar .navlink, body #navbar .active {
   width: 20%;
   border-top: 0;
   border-right: 0.1rem solid var(--white);
   border-bottom: 0.01rem solid var(--white);
   transition: all 0.2s;
 }
-#navbar .navlink:last-child {
+body #navbar .navlink:last-child, body #navbar .active:last-child {
   border-right: none;
 }
-#navbar .navlink:hover {
+body #navbar .navlink:hover, body #navbar .active:hover {
   border-bottom: 0.15rem solid var(--yellow);
   transition: all 0.2s;
   box-shadow: inset 0 -15px 15px -15px var(--yellow);
@@ -163,6 +162,7 @@ body #header #headtext h3 i {
   body #navbar {
     flex-direction: column;
     height: 8vh;
+    border-bottom: 0.01rem solid var(--white);
   }
   body #navbar #navlogo {
     width: 100%;
@@ -180,6 +180,11 @@ body #header #headtext h3 i {
     display: none;
   }
   body #navbar .navlink {
+    transform: translateX(-100vw);
+    border: none;
+  }
+  body #navbar .active {
+    transform: translateX(0);
     border: none;
     width: 100%;
     font-size: 3vw;
@@ -188,10 +193,10 @@ body #header #headtext h3 i {
     opacity: 1;
     z-index: -100;
   }
-  body #navbar .navlink:last-child {
+  body #navbar .active:last-child {
     border-bottom: 0.01rem solid var(--white);
   }
-  body #navbar .navlink:hover {
+  body #navbar .active:hover {
     font-size: 3vw;
     box-shadow: none;
     border-bottom: 0.01rem solid var(--yellow);
