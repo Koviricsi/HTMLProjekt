@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS, JS, BOOTSTRAP/nav_header_css/navheader.css">
+    <link rel="stylesheet" href="CSS, JS, BOOTSTRAP/nav_header_css_js/navheader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="CSS, JS, BOOTSTRAP/nav_header_css_js/navmobile.js" dir="auto"></script>
     <title>Form</title>
 </head>
 <body>
@@ -15,17 +16,17 @@
         <div id="headtext"><h3>Rest in peace!<br><i>1989 - 2018</i></h3></div>
     </section>
     <div id="navbar">
-        <div id="navlogo">
+        <div id="navlogo" onclick="navMenu()" name="on">
             <img src="src/img/Avicii_-_Logo.png" alt="logo">
         </div>
         <div id="navplaceholder"></div>
-        <a id="navhome" href="#">
+        <a id="navhome" href="#" class="navlink">
             <h4>Kezdőlap</h4>
         </a>
-        <a id="navlyrics" href="#">
+        <a id="navlyrics" href="#" class="navlink">
             <h4>Lyrics</h4>
         </a>
-        <a id="navform" href="#">
+        <a id="navform" href="#" class="navlink">
             <h4>Jelentkezés</h4>
         </a>
     </div>

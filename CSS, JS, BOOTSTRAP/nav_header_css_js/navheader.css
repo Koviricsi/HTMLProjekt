@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 html {
@@ -104,48 +105,21 @@ body #header #headtext h3 i {
   width: 30%;
   border-bottom: 0.01rem solid var(--white);
 }
-#navbar #navhome {
+#navbar .navlink {
   width: 20%;
   border-top: 0;
   border-right: 0.1rem solid var(--white);
   border-bottom: 0.01rem solid var(--white);
   transition: all 0.2s;
 }
-#navbar #navhome:hover {
+#navbar .navlink:last-child {
+  border-right: none;
+}
+#navbar .navlink:hover {
   border-bottom: 0.15rem solid var(--yellow);
   transition: all 0.2s;
   box-shadow: inset 0 -15px 15px -15px var(--yellow);
   letter-spacing: 1px;
-  font-size: 2vw;
-  color: var(--yellow);
-}
-#navbar #navlyrics {
-  width: 20%;
-  border-top: 0;
-  border-bottom: 0.01rem solid var(--white);
-  border-right: 0.1rem solid var(--white);
-  transition: all 0.2s;
-}
-#navbar #navlyrics:hover {
-  border-bottom: 0.15rem solid var(--yellow);
-  transition: all 0.2s;
-  box-shadow: inset 0 -15px 15px -15px var(--yellow);
-  letter-spacing: 1px;
-  font-size: 2vw;
-  color: var(--yellow);
-}
-#navbar #navform {
-  width: 20%;
-  border-top: 0;
-  border-bottom: 0.01rem solid var(--white);
-  transition: all 0.2s;
-}
-#navbar #navform:hover {
-  border-bottom: 0.15rem solid var(--yellow);
-  transition: all 0.2s;
-  box-shadow: inset 0 -15px 15px -15px var(--yellow);
-  letter-spacing: 1px;
-  font-size: 2vw;
   color: var(--yellow);
 }
 
@@ -188,44 +162,38 @@ body #header #headtext h3 i {
   }
   body #navbar {
     flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 8vh;
   }
   body #navbar #navlogo {
     width: 100%;
+    height: 8vh;
+    display: block;
+    text-align: center;
     border-bottom: none;
+    z-index: -100;
   }
   body #navbar #navlogo img {
-    width: 20%;
+    width: auto;
+    height: 7vh;
   }
   body #navbar #navplaceholder {
     display: none;
   }
-  body #navbar #navhome {
-    border: solid transparent;
+  body #navbar .navlink {
+    border: none;
     width: 100%;
     font-size: 3vw;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    z-index: -100;
   }
-  body #navbar #navhome:hover {
-    font-size: 3vw;
-    box-shadow: none;
-  }
-  body #navbar #navlyrics {
-    border: solid transparent;
-    width: 100%;
-    font-size: 3vw;
-  }
-  body #navbar #navlyrics:hover {
-    font-size: 3vw;
-    box-shadow: none;
-  }
-  body #navbar #navform {
+  body #navbar .navlink:last-child {
     border-bottom: 0.01rem solid var(--white);
-    width: 100%;
-    font-size: 3vw;
   }
-  body #navbar #navform:hover {
+  body #navbar .navlink:hover {
     font-size: 3vw;
     box-shadow: none;
+    border-bottom: 0.01rem solid var(--yellow);
   }
 }/*# sourceMappingURL=navheader.css.map */

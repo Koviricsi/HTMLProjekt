@@ -8,6 +8,7 @@
 
 *{
     box-sizing: border-box;
+    z-index: 1;
 }
 
 html{
@@ -116,49 +117,20 @@ z-index: 1;
         border-bottom: 0.01rem solid var(--white);
     }
 
-    #navhome{
+    .navlink{
         width: 20%;
         border-top: 0;
         border-right: 0.1rem solid var(--white);
         border-bottom: 0.01rem solid var(--white);
         transition: all 0.2s;
-        &:hover{
-            border-bottom: 0.15rem solid var(--yellow);
-            transition: all 0.2s;
-            box-shadow: inset 0 -15px 15px -15px var(--yellow);
-            letter-spacing: 1px;
-            font-size: 2vw;
-            color: var(--yellow);
+        &:last-child{
+            border-right: none
         }
-    }
-
-    #navlyrics{
-        width: 20%;
-        border-top: 0;
-        border-bottom: 0.01rem solid var(--white);
-        border-right: 0.1rem solid var(--white);
-        transition: all 0.2s;
         &:hover{
             border-bottom: 0.15rem solid var(--yellow);
             transition: all 0.2s;
             box-shadow: inset 0 -15px 15px -15px var(--yellow);
             letter-spacing: 1px;
-            font-size: 2vw;
-            color: var(--yellow);
-        }
-    }
-
-    #navform{
-        width: 20%;
-        border-top: 0;
-        border-bottom: 0.01rem solid var(--white);
-        transition: all 0.2s;
-        &:hover{
-            border-bottom: 0.15rem solid var(--yellow);
-            transition: all 0.2s;
-            box-shadow: inset 0 -15px 15px -15px var(--yellow);
-            letter-spacing: 1px;
-            font-size: 2vw;
             color: var(--yellow);
         }
     }
@@ -207,47 +179,39 @@ z-index: 1;
 
         #navbar{
             flex-direction: column;
-            height: fit-content;
+            height: 8vh;
 
             #navlogo{
                 width: 100%;
+                height: 8vh;
+                display: block;
+                text-align: center;
                 border-bottom: none;
+                z-index: -100;
                 img{
-                    width: 20%;
+                    width: auto;
+                    height: 7vh;
                 }
             }
         
             #navplaceholder{
                 display: none;
             }
-        
-            #navhome{
-                border: solid transparent;
+            .navlink{
+                border: none;
                 width: 100%;
                 font-size: 3vw;
-                &:hover{
-                    font-size: 3vw;
-                    box-shadow: none;
+                position: relative;
+                top: 0;
+                opacity: 1;
+                z-index: -100;
+                &:last-child{
+                    border-bottom: 0.01rem solid var(--white);
                 }
-            }
-        
-            #navlyrics{
-                border: solid transparent;
-                width: 100%;
-                font-size: 3vw;
                 &:hover{
                     font-size: 3vw;
                     box-shadow: none;
-                }
-            }
-        
-            #navform{
-                border-bottom: 0.01rem solid var(--white);
-                width: 100%;
-                font-size: 3vw;
-                &:hover{
-                    font-size: 3vw;
-                    box-shadow: none;
+                    border-bottom: 0.01rem solid var(--yellow);
                 }
             }
         }
