@@ -4,4 +4,21 @@
   --grey: rgb(85, 85, 85);
   --darkyellow: rgb(140, 150, 0);
   --yellow: rgb(255, 255, 0);
+}
+
+body #content {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body #content::before {
+  content: "";
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url(../../src/img/avicii-wallpaper.jpg);
+  background-size: cover;
+  background-position: top;
+  filter: blur(4px) grayscale(1) invert(1) contrast(1.2);
 }/*# sourceMappingURL=form.css.map */
