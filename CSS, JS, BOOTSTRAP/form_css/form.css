@@ -8,17 +8,113 @@
 
 body #content {
   display: flex;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-body #content::before {
-  content: "";
-  position: relative;
-  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
+  margin: 0;
+  gap: 1rem;
+  padding: 5rem;
   background: url(../../src/img/avicii-wallpaper.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body #content #club {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid var(--white) 0.1rem;
+  padding: 5vh;
+  border-radius: 2rem;
+  background: url(../../src/img/avicii-background.png) no-repeat;
+  background-position: center;
   background-size: cover;
-  background-position: top;
-  filter: blur(4px) grayscale(1) invert(1) contrast(1.2);
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+body #content #club h1 {
+  text-align: center;
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 5vw;
+}
+body #content #club label {
+  font-size: 2vw;
+}
+body #content #club input, body #content #club select {
+  border-radius: 0.5rem;
+  border: solid var(--white) 0.1rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  height: 5vh;
+  width: 25vw;
+  font-size: 1.5vw;
+}
+body #content #club option {
+  color: var(--black);
+}
+body #content #club textarea {
+  border: solid 0.1rem var(--white);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: var(--white);
+}
+body #content #club textarea::-moz-placeholder {
+  color: var(--white);
+}
+body #content #club textarea::placeholder {
+  color: var(--white);
+}
+body #content #club #submit {
+  margin: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 10%;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: var(--white);
+}
+body #content #news {
+  border: solid var(--white) 0.1rem;
+  padding: 5vh;
+  border-radius: 2rem;
+  background: url(../../src/img/avicii-background2.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #content #news h1 {
+  font-size: 8vh;
+  color: var(--yellow);
+  text-shadow: 0.5vh 0.5vh 0vh var(--darkyellow);
+}
+body #content #news input[type=email] {
+  border-radius: 0.5rem;
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  body #content::before {
+    content: "";
+    background: url(../../src/img/Avicii-Logo.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: repeat-y;
+    filter: blur(5px) grayscale(1) invert(1) contrast(1.2);
+  }
 }/*# sourceMappingURL=form.css.map */
